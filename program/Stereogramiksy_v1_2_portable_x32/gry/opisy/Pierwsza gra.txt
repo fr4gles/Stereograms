@@ -1,0 +1,4 @@
+Pierwsza gra
+1
+gry/obrazki/pi.jpg
+pi

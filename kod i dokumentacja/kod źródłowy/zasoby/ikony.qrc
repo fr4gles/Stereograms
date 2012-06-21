@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/icon">
+        <file>back.png</file>
+        <file>exit.png</file>
+        <file>Open.png</file>
+        <file>Refresh.png</file>
+        <file>Save.png</file>
+        <file>stereo.png</file>
+        <file>play.png</file>
+        <file>about.png</file>
+        <file>magic.png</file>
+        <file>tick.png</file>
+        <file>add.png</file>
+        <file>next.png</file>
+    </qresource>
+</RCC>

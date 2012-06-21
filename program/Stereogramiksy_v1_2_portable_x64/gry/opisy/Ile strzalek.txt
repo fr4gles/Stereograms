@@ -1,0 +1,8 @@
+Ile strzalek
+3
+gry/obrazki/strzalki.jpg
+gry/obrazki/strzalki2.jpg
+gry/obrazki/strzalki3.jpg
+4
+3
+1

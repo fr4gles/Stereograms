@@ -1,0 +1,983 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Stereogramiksy: Dokumentacja klasy StereogramGenerator</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="stereo.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Stereogramiksy
+   &#160;<span id="projectnumber">1.2</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#signals">Sygnały</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy StereogramGenerator</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="StereogramGenerator" -->
+<p><code>#include &lt;<a class="el" href="stereogramgenerator_8h_source.html">stereogramgenerator.h</a>&gt;</code></p>
+
+<p><a href="class_stereogram_generator-members.html">Lista wszystkich składowych.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="signals"></a>
+Sygnały</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a2cdce8fd926b60b875e651bc36ff740a">setStatusBarLabel</a> (QString tmp)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#ab9f4dbe8c8716ca8a4bf678e169f8108">StereogramGenerator</a> (QObject *parent=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a70e015d06f22c7dcac59a58b2a94bd26">~StereogramGenerator</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a04d433122a776d5d62d1b3a1db39b2d1">setImage</a> (QImage *img)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#af078db1de4b5c12310ea73bf8d5e36b8">getImage</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a9578a0d9cf76dc424af102912be47983">generate</a> (int convex, int color=false, bool circles=false, int size=4, int keepAspectRatio=true)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a867a8e53f2dfc53a3e7409d10f2b9389">setDefault</a> (int DPI, double distanceBetweenEyes)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a5181b264038c53241c3af7940da3d556">changeDefault</a> (int currentDPI, int currentDistanceBetweenEyes)</td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#ae8feabb9cb27e0d0351e6b75b4ff53f8">drawCirclesOnImage</a> (int maxX, int maxY)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a585ace9f042f83414b2d23c82184f3f5">calculateImageDepth</a> (double **imageDepth, int convex)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#ae5fa87e3361ae8e5d30d94be6c4c4bbe">roundSomething</a> (double something)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a9f6e8779395b6464c9772f5472d618b2">separateSomething</a> (double something)</td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a0c39adb0cd67ce71ae980f8d5437055d">_heightOfImage_Y</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#afd2e0fef690381a4dca4cb1997544fe5">_wygenerowano</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a7a45b0cada49b07013fb05bb2defcc98">_distanceBetweenEyes</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a76381656f3d02ba5071f8abad1a4354a">_DPI</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#ab0c288e7efcf038ae01dff34fbd6121a">_depthOfField</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a5cb40b4855eb65429d603d44107059fc">_eyeSeparation</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stereogram_generator.html#a3a53dc06581ebc8f8e71fdf4a49e294a">_farOfDots</a></td></tr>
+</table>
+<hr/><h2>Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="ab9f4dbe8c8716ca8a4bf678e169f8108"></a><!-- doxytag: member="StereogramGenerator::StereogramGenerator" ref="ab9f4dbe8c8716ca8a4bf678e169f8108" args="(QObject *parent=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_stereogram_generator.html#ab9f4dbe8c8716ca8a4bf678e169f8108">StereogramGenerator::StereogramGenerator</a> </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p><a class="el" href="class_stereogram_generator.html">StereogramGenerator</a> - wstępna inicjalizacja argumentów, konstruktor Konstruktor klasy <a class="el" href="class_main_window.html">MainWindow</a> </p>
+<dl class="see"><dt><b>Zobacz również:</b></dt><dd><a class="el" href="class_stereogram_generator.html#a867a8e53f2dfc53a3e7409d10f2b9389">setDefault()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#a5181b264038c53241c3af7940da3d556">changeDefault()</a>; </dd></dl>
+<div class="fragment"><pre class="fragment">                                                        :
+    QObject(parent)
+{
+    <span class="comment">// uzywac</span>
+    qDebug() &lt;&lt; <span class="stringliteral">&quot;Konstruktor klasy: SteogramGenerator()&quot;</span>;
+    <a class="code" href="class_stereogram_generator.html#a867a8e53f2dfc53a3e7409d10f2b9389">setDefault</a>(96,2.7);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a70e015d06f22c7dcac59a58b2a94bd26"></a><!-- doxytag: member="StereogramGenerator::~StereogramGenerator" ref="a70e015d06f22c7dcac59a58b2a94bd26" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_stereogram_generator.html#a70e015d06f22c7dcac59a58b2a94bd26">StereogramGenerator::~StereogramGenerator</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Destruktor klasy <a class="el" href="class_stereogram_generator.html">StereogramGenerator</a> </p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordflow">if</span>(<a class="code" href="class_stereogram_generator.html#afd2e0fef690381a4dca4cb1997544fe5">_wygenerowano</a>)
+    {
+        <span class="keyword">delete</span> <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>;
+    }
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a585ace9f042f83414b2d23c82184f3f5"></a><!-- doxytag: member="StereogramGenerator::calculateImageDepth" ref="a585ace9f042f83414b2d23c82184f3f5" args="(double **imageDepth, int convex)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_stereogram_generator.html#a585ace9f042f83414b2d23c82184f3f5">StereogramGenerator::calculateImageDepth</a> </td>
+          <td>(</td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>imageDepth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>convex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>calculateImageDepth - funkcja oblczająca "głębokość" ( w skali szarości ) pixel po pixelu ( dla koloru białego - 0, dla koloru czarnego - 1 ) </p>
+<dl class="params"><dt><b>Parametry:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">**imageDepth</td><td>- tablica, która zostanie uzupełniona wartościami danych pixeli na skali szarości </td></tr>
+    <tr><td class="paramname">convex</td><td>- wklęsłość </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Zobacz również:</b></dt><dd><a class="el" href="class_stereogram_generator.html#a9578a0d9cf76dc424af102912be47983">generate()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#ae8feabb9cb27e0d0351e6b75b4ff53f8">drawCirclesOnImage()</a>; </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>void </dd></dl>
+<p>tworzenie tymczasowej zmiennej, której wartość będzie zależeć od tego czy generowane wartości mają być dla stereogramu wypukłego ( normalnie widoczny stereogram ) czy wklęsłego ( gdzie kolor biały jest bliżej nas a czarny dalej )</p>
+<p>przejście po wszystkich pixelach na szerości dla każdego, przejście przez wszystkie pionowe pixele następnie wypełnienie tablicy dwuwymiarowej imageDepth[x][y] - wartościami danego pixela ( w skali szarości ) </p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordtype">float</span> tmp;
+    <span class="keywordflow">if</span>(convex)
+        tmp = 1.0;
+    <span class="keywordflow">else</span>
+        tmp=-1.0;
+
+    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x=0;x&lt;<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a>-&gt;width();++x)
+    {
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y=0;y&lt;<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a>-&gt;height();++y)
+        {
+            imageDepth[x][y] = ((double)(convex - (qGray(<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a>-&gt;pixel(x,y))/255.0)*tmp));
+        }
+    }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a5181b264038c53241c3af7940da3d556"></a><!-- doxytag: member="StereogramGenerator::changeDefault" ref="a5181b264038c53241c3af7940da3d556" args="(int currentDPI, int currentDistanceBetweenEyes)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_stereogram_generator.html#a5181b264038c53241c3af7940da3d556">StereogramGenerator::changeDefault</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>currentDPI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>currentDistanceBetweenEyes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>changeDefault - zmienia wartości domyślne </p>
+<dl class="params"><dt><b>Parametry:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentDPI</td><td>- ustawia DPI wybrane przez użytkownika </td></tr>
+    <tr><td class="paramname">currentDistanceBetweenEyes</td><td>- ustawia odległość między oczay ( w calach ) wybraną przez użytkonika. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Zobacz również:</b></dt><dd><a class="el" href="class_stereogram_generator.html#a9578a0d9cf76dc424af102912be47983">generate()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#a5181b264038c53241c3af7940da3d556">changeDefault()</a>; </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>void </dd></dl>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordflow">switch</span>(currentDPI)
+    {
+        <span class="keywordflow">case</span> 0:     <a class="code" href="class_stereogram_generator.html#a76381656f3d02ba5071f8abad1a4354a">_DPI</a> = 76;      <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> 1:     <a class="code" href="class_stereogram_generator.html#a76381656f3d02ba5071f8abad1a4354a">_DPI</a> = 96;      <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> 2:     <a class="code" href="class_stereogram_generator.html#a76381656f3d02ba5071f8abad1a4354a">_DPI</a> = 150;     <span class="keywordflow">break</span>;
+        <span class="keywordflow">default</span>:    <a class="code" href="class_stereogram_generator.html#a76381656f3d02ba5071f8abad1a4354a">_DPI</a> = 96;      <span class="keywordflow">break</span>;
+    }
+
+    <span class="keywordflow">switch</span>(currentDistanceBetweenEyes)
+    {
+        <span class="keywordflow">case</span> 0:     <a class="code" href="class_stereogram_generator.html#a7a45b0cada49b07013fb05bb2defcc98">_distanceBetweenEyes</a> = 2.5;     <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> 1:     <a class="code" href="class_stereogram_generator.html#a7a45b0cada49b07013fb05bb2defcc98">_distanceBetweenEyes</a> = 2.6;     <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> 2:     <a class="code" href="class_stereogram_generator.html#a7a45b0cada49b07013fb05bb2defcc98">_distanceBetweenEyes</a> = 2.7;     <span class="keywordflow">break</span>;
+        <span class="keywordflow">default</span>:    <a class="code" href="class_stereogram_generator.html#a7a45b0cada49b07013fb05bb2defcc98">_distanceBetweenEyes</a> = 2.755;   <span class="keywordflow">break</span>;
+    }
+
+    <a class="code" href="class_stereogram_generator.html#a5cb40b4855eb65429d603d44107059fc">_eyeSeparation</a>          = <a class="code" href="class_stereogram_generator.html#ae5fa87e3361ae8e5d30d94be6c4c4bbe">roundSomething</a>(<a class="code" href="class_stereogram_generator.html#a7a45b0cada49b07013fb05bb2defcc98">_distanceBetweenEyes</a>*<a class="code" href="class_stereogram_generator.html#a76381656f3d02ba5071f8abad1a4354a">_DPI</a>);
+    <a class="code" href="class_stereogram_generator.html#ab0c288e7efcf038ae01dff34fbd6121a">_depthOfField</a>           = (1.0/3.0);
+    <a class="code" href="class_stereogram_generator.html#a3a53dc06581ebc8f8e71fdf4a49e294a">_farOfDots</a>              = <a class="code" href="class_stereogram_generator.html#a9f6e8779395b6464c9772f5472d618b2">separateSomething</a>(0);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ae8feabb9cb27e0d0351e6b75b4ff53f8"></a><!-- doxytag: member="StereogramGenerator::drawCirclesOnImage" ref="ae8feabb9cb27e0d0351e6b75b4ff53f8" args="(int maxX, int maxY)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_stereogram_generator.html#ae8feabb9cb27e0d0351e6b75b4ff53f8">StereogramGenerator::drawCirclesOnImage</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>drawCirclesOnImage - funckja rysująca na obrazku pomocnicze kropki ( zmienne pomagają określić w jakim miejscu mają się znaleźć kropki ) </p>
+<dl class="params"><dt><b>Parametry:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxX</td><td>- szerokość obrazka </td></tr>
+    <tr><td class="paramname">maxY</td><td>- wysokość obrazka </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Zobacz również:</b></dt><dd><a class="el" href="class_stereogram_generator.html#a9578a0d9cf76dc424af102912be47983">generate()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#a585ace9f042f83414b2d23c82184f3f5">calculateImageDepth()</a>; </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>void </dd></dl>
+<p>rysowanie za pomocą QPainter'a na obrazku _imageGeneratedStereogram pomocniczych czarnych kropek ( opcjonalnie, dla użytkownika ) czarne kropki są w zadanej odległości od siebie - tak aby z dwóch ( użytkownik programu zobaczył trzy ) </p>
+<div class="fragment"><pre class="fragment">{
+    QPainter p;
+    p.begin(<a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>);
+    p.setBrush(QBrush(Qt::black));
+    p.setPen(Qt::black);
+    p.drawEllipse(<a class="code" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a>/2-<a class="code" href="class_stereogram_generator.html#a3a53dc06581ebc8f8e71fdf4a49e294a">_farOfDots</a>/2,<a class="code" href="class_stereogram_generator.html#a0c39adb0cd67ce71ae980f8d5437055d">_heightOfImage_Y</a>*16/19,20,20);
+    p.drawEllipse(<a class="code" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a>/2+<a class="code" href="class_stereogram_generator.html#a3a53dc06581ebc8f8e71fdf4a49e294a">_farOfDots</a>/2,<a class="code" href="class_stereogram_generator.html#a0c39adb0cd67ce71ae980f8d5437055d">_heightOfImage_Y</a>*16/19,20,20);
+    p.end();
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a9578a0d9cf76dc424af102912be47983"></a><!-- doxytag: member="StereogramGenerator::generate" ref="a9578a0d9cf76dc424af102912be47983" args="(int convex, int color=false, bool circles=false, int size=4, int keepAspectRatio=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_stereogram_generator.html#a9578a0d9cf76dc424af102912be47983">StereogramGenerator::generate</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>convex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>color</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>circles</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em> = <code>4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keepAspectRatio</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>generate - główna funkcja klasy <a class="el" href="class_stereogram_generator.html">StereogramGenerator</a>, zawiera w sobie algorytm generujący stereogramy oraz wywołuje funckje pozwalające na zmianę rozmiaru, koloru, wklęsłości, rysowania pomocniczych kropek </p>
+<dl class="params"><dt><b>Parametry:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">convex</td><td>- zmienna odpowiadająca za "wklęsłość" - to czy wygenerowany obrazek będzie widoczny jako zwykły obiekt lub jako wycięty. </td></tr>
+    <tr><td class="paramname">color</td><td>- odpowiada za kolory w jakich ma zostać wygenerowany stereogram </td></tr>
+    <tr><td class="paramname">circles</td><td>- odpowiada za to czy na obrazku mają się pojawić pomocnicze w zobaczeniu stereogramu kółka </td></tr>
+    <tr><td class="paramname">size</td><td>- odpowiada za rozmiar w jakim ma być wygenerowancy stereogram - głownie na potrzeby zapisu do pliku </td></tr>
+    <tr><td class="paramname">keepAspectRatio</td><td>- odpowiada za to czy obrazek po zmianie rozmiaru ma się dopasować do przyjętych poprocji czy porzucić swoje poporcje i dopasować się rozmiaru ( rozciągnąć, spłaszczyć ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Zobacz również:</b></dt><dd><a class="el" href="class_stereogram_generator.html#a04d433122a776d5d62d1b3a1db39b2d1">setImage()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#ae8feabb9cb27e0d0351e6b75b4ff53f8">drawCirclesOnImage()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#a585ace9f042f83414b2d23c82184f3f5">calculateImageDepth()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#ae5fa87e3361ae8e5d30d94be6c4c4bbe">roundSomething()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#a9f6e8779395b6464c9772f5472d618b2">separateSomething()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#a2cdce8fd926b60b875e651bc36ff740a">setStatusBarLabel()</a>; </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>void </dd></dl>
+<p>czyszczenie pamięci jeśli obrazek jakiś obrazek został już wczytany</p>
+<p>tworzenie kopii oryginalnego obrazka wczytanego do generatora</p>
+<p>ustawienie odpowiedzialne za to czy generowany obrazek ma zachować swoje proporcje bądź nie</p>
+<p>swotch odpowiadający rozmiar w jakim dany obrazek będzie generowany standardowo obrazek generowany ma rozmiar około 1280x720 reszta opcji używna dopiero przy wywołaniu opcji zapisu stereogramu</p>
+<p>przypisanie zmiennym używanym w algorytmie generowania stereogramu, szerokości i wysokości obrazka</p>
+<p>zarezerwowanie pamięci dla nowego ( na razie pustego obrazka ), który w przyszłości będzie stereogramem</p>
+<p>zarezwerwowanie pamięci dla tablicy dwuwymiarowej[szerokość][wykość]</p>
+<ul>
+<li>w której będą przechowywane "głębokości" kolejnych pixeli</li>
+</ul>
+<p>wywołanie funkcji obliczającej "głębokość" pixeli na skali szarości ( czarny 1, biały 0 ), im ciemniejszy tym bliżej nas</p>
+<p>wysłanie do status bara, w głownym oknie aplikacji, wiadomości</p>
+<p>początek algorytmu generującego stereogramy algorytm zaczerpnięty z "Displaying 3D Images: Algorithms for Single Image Random Dot Stereograms" autorstwa: Harold W. Thimbleby, Stuart Inglis, Ian H. Witten poniżej implementacja algorytmu</p>
+<p>przechodzimy po wszystkich pixelach, po pixelach poziomych tak aby zastosować algorytm do wszystkich linii oddzielnie x,y współrzędne danego punktu ( pixela )</p>
+<p>tablica kolorów danych pixeli</p>
+<p>tablica pixeli, które wskazują na te pixele które mają mieć wymuszony dany kolor ( czarny lub biały ) [ wszystko w zależności od tego, czy posiadamy informację na temat "głębokości" danego pixela ]</p>
+<p>punkt - przechowuje informacje na temat rozdzielenia dwóch identycznych pixeli odpowiadających rodzieleniu "stereo" tych punktów </p>
+<dl class="note"><dt><b>Nota:</b></dt><dd>rozdzielenie "stereo" efekt wizualny - wykorzystywany do generowania stereogramów</dd></dl>
+<p>"lewy" i "prawy" pixel muszą być tego samego koloru</p>
+<ul>
+<li>odpowiadają pixelowi widocznemu przez lewe i analogicznie prawe oko</li>
+</ul>
+<p>inicjalizacja tablicy pixeli samePixels początkowo przypisujemy pixelom ich własne wartości</p>
+<p>przypisanie - rozdzielenie dwóch punktów</p>
+<p>przypisanie wartości do zmiennych przechowujących informacje o pixelu lewym i prawym</p>
+<ul>
+<li>pixel lewy jak i pixel prawy muszą być takie same ( albo przynajmniej powinny takie być ... )</li>
+</ul>
+<p>dalsza część algorytmu</p>
+<ul>
+<li>usuwanie niewidocznych powierzchni</li>
+</ul>
+<p>zmienna odpowiedzialana za usuwanie niewidocznych ( ukrytych ) powieżchni</p>
+<p>zmienna tymczasowa, porządkująca kod i alorytm [ będziemy sprawdzać pixele x+tmp i x-tmp - czy nie są zakryte, bądź takie same ]</p>
+<p>zmienna przechowująca wartość odległości od "ściany" stereogramu zależnie od wartości imageDepth - czyli głębi na skali szarości</p>
+<p>pętla odpowiadająca za przejście i usunięcie wszystkich ukrytych powierzni</p>
+<p>implementacja wzoru wyliczającego odległości ( promień )</p>
+<p>jeśli dany pixel jest zasłonięty to isVisible = 0</p>
+<p>postinkrementacja tmp</p>
+<ul>
+<li>będziemy sprawdzać dla kolejnych sąsiednich pixeliczy się pokrywają</li>
+</ul>
+<p>sprawdzamy czy pixele są takie same - jeśli są widoczne</p>
+<p>następnie porównujemy pixele do momentu aż samePixels[leftEye] = leftEye lub samePixels[leftEye] = rightEye jeśli nie są - zamieniamy je miejscami</p>
+<p>odnotowujemy fakt, że pixele są takie same</p>
+<p>końcowa część algorytmu ostatnia pętla po ktorej odpowiednim pixelom zostaje nadany kolor</p>
+<p>losowo nadajemy im wartości zamiarem algorytmu jest uzyskanie koloru czarnego lub białego dokłaniej dwóch różnych kontrastowych kolorów</p>
+<ul>
+<li>czarny powinien zostać</li>
+</ul>
+<p>switch odpowiedzialny za nadanie innego koloru stereogramowi ( niż biały )</p>
+<ul>
+<li>poprzez wybranie odpowiedniej wartosci color przez uzytkowika</li>
+</ul>
+<p>wysłanie za każdym przebiegiem pętli postęp jaki został wykonany do statusbara na głownym oknie</p>
+<p>po skończeniu algorytmu, przesłąnie do głownego okna postęp jaki został wykonany oraz rozdzielczośc wygenerowanego stereogramu</p>
+<p>jeśli użytkownik zaznaczył taką opcję to stereogramy są generowane z pomocniczymi kropkami dokładniejszy opis znajduje się w funkcji</p>
+<p>czyszczenie pamięci - usuwanie tymczasowej tablicy pixeli</p>
+<p>po 1 wygenerowaniu obrazka warość _wygerowano zmienia się na true pomaga to zapobiec późniejszym wyciekom pamięci </p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordflow">if</span>(<a class="code" href="class_stereogram_generator.html#afd2e0fef690381a4dca4cb1997544fe5">_wygenerowano</a>)
+    {
+        <span class="keyword">delete</span> <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>;
+    }
+
+    <a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a> = <a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a>;
+
+    Qt::AspectRatioMode aspectModel;
+    <span class="keywordflow">if</span>(keepAspectRatio!=0)
+        aspectModel = Qt::KeepAspectRatio;
+    <span class="keywordflow">else</span>
+        aspectModel = Qt::IgnoreAspectRatio;
+
+    <span class="keywordflow">switch</span>(size)
+    {
+        <span class="keywordflow">case</span> 0:     *<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a> = <a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a>-&gt;scaled(QSize(800,600),aspectModel);         <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> 1:     *<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a> = <a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a>-&gt;scaled(QSize(1024,768),aspectModel);        <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> 2:     *<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a> = <a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a>-&gt;scaled(1280,720,aspectModel);               <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> 3:     *<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a> = <a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a>-&gt;scaled(1920,1080,aspectModel);              <span class="keywordflow">break</span>;
+        <span class="keywordflow">case</span> 4:
+            <span class="keywordflow">if</span>(<a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a>-&gt;height() &gt;= 720)
+                *<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a> = <a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a>-&gt;scaledToHeight(720);
+            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a>-&gt;width()&gt;= 1280)
+                *<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a> = <a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a>-&gt;scaledToWidth(1280);
+        <span class="keywordflow">break</span>;
+        <span class="keywordflow">default</span>:    <a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a> = <a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a>;      <span class="keywordflow">break</span>;
+    }
+
+    <a class="code" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a> = <a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a>-&gt;width();
+    <a class="code" href="class_stereogram_generator.html#a0c39adb0cd67ce71ae980f8d5437055d">_heightOfImage_Y</a> = <a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a>-&gt;height();
+
+    <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a> = <span class="keyword">new</span> QImage(<a class="code" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a>,<a class="code" href="class_stereogram_generator.html#a0c39adb0cd67ce71ae980f8d5437055d">_heightOfImage_Y</a>,QImage::Format_RGB32);
+
+    <span class="keywordtype">double</span> **imageDepth = 0;
+    imageDepth = <span class="keyword">new</span> <span class="keywordtype">double</span>*[<a class="code" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a>];
+    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a>;++i)
+        imageDepth[i] = <span class="keyword">new</span> <span class="keywordtype">double</span>[<a class="code" href="class_stereogram_generator.html#a0c39adb0cd67ce71ae980f8d5437055d">_heightOfImage_Y</a>];
+
+    <a class="code" href="class_stereogram_generator.html#a585ace9f042f83414b2d23c82184f3f5">calculateImageDepth</a>(imageDepth,convex);
+
+    emit <a class="code" href="class_stereogram_generator.html#a2cdce8fd926b60b875e651bc36ff740a">setStatusBarLabel</a>(<span class="stringliteral">&quot;Generowanie&quot;</span>);
+
+    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y=0;y&lt;<a class="code" href="class_stereogram_generator.html#a0c39adb0cd67ce71ae980f8d5437055d">_heightOfImage_Y</a>;++y)
+    {
+        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> colorOfPixel[<a class="code" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a>];
+
+        <span class="keywordtype">int</span> samePixels[<a class="code" href="class_stereogram_generator.html#a0c39adb0cd67ce71ae980f8d5437055d">_heightOfImage_Y</a>];
+
+        <span class="keywordtype">int</span> stereoSeparationOfPoint;
+
+        <span class="keywordtype">int</span> leftEye, rightEye;
+
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x=0;x&lt;<a class="code" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a>;++x)
+            samePixels[x]=x;
+
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x=0;x&lt;<a class="code" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a>;++x)
+        {
+            stereoSeparationOfPoint = <a class="code" href="class_stereogram_generator.html#a9f6e8779395b6464c9772f5472d618b2">separateSomething</a>(imageDepth[x][y]);
+
+            leftEye = x - stereoSeparationOfPoint/2;
+            rightEye = leftEye + stereoSeparationOfPoint;
+
+            <span class="keywordflow">if</span>(0 &lt;= leftEye &amp;&amp; rightEye &lt; _widthOfImage_X)
+            {
+                <span class="keywordtype">int</span> isVisible;
+
+                <span class="keywordtype">int</span> tmp=1;
+
+                <span class="keywordtype">float</span> rayOfImageDepthAtPoint;
+
+                <span class="keywordflow">do</span>
+                {
+                    rayOfImageDepthAtPoint = imageDepth[x][y] + 2*(2 - <a class="code" href="class_stereogram_generator.html#ab0c288e7efcf038ae01dff34fbd6121a">_depthOfField</a>*imageDepth[x][y])*tmp/(<a class="code" href="class_stereogram_generator.html#ab0c288e7efcf038ae01dff34fbd6121a">_depthOfField</a>*<a class="code" href="class_stereogram_generator.html#a5cb40b4855eb65429d603d44107059fc">_eyeSeparation</a>);
+
+                    isVisible = imageDepth[x-tmp][y] &lt; rayOfImageDepthAtPoint &amp;&amp; imageDepth[x+tmp][y] &lt; rayOfImageDepthAtPoint;
+
+                    tmp++;
+                }
+                <span class="keywordflow">while</span> (isVisible &amp;&amp; rayOfImageDepthAtPoint &lt; 1);
+
+                <span class="keywordflow">if</span> (isVisible)
+                {
+                    <span class="keywordtype">int</span> left_N_right = samePixels[leftEye];
+                    <span class="keywordflow">while</span> (left_N_right != leftEye &amp;&amp; left_N_right != rightEye)
+                    {
+                        <span class="keywordflow">if</span> (left_N_right &gt; rightEye)
+                        {
+                            leftEye = left_N_right;
+                            left_N_right = samePixels[leftEye];
+                        }
+                        <span class="keywordflow">else</span>
+                        {
+                            samePixels[leftEye] = rightEye;
+                            leftEye = rightEye;
+                            left_N_right = samePixels[leftEye];
+                            rightEye = left_N_right;
+                        }
+                    }
+
+                samePixels[leftEye] = rightEye;
+                }
+            }
+        }
+
+        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x=_widthOfImage_X-1 ; x&gt;= 0 ; x--)
+        {
+            <span class="keywordflow">if</span> (samePixels[x] == x) colorOfPixel[x] = qrand()&amp;1;
+            <span class="keywordflow">else</span> colorOfPixel[x] = colorOfPixel[samePixels[x]];
+
+            <span class="keywordflow">switch</span> (color)
+            {
+                <span class="keywordflow">case</span> 0:     <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*16775930); <span class="comment">/* White */</span>         <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 1:     <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*14210000); <span class="comment">/* Gray */</span>          <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 2:     <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*11500000); <span class="comment">/* Purple */</span>        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 3:     <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*11800000); <span class="comment">/* Violet */</span>        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 4:     <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*14245000); <span class="comment">/* Pink */</span>          <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 5:     <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*14300000); <span class="comment">/* Scarlet */</span>       <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 6:     <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*16000000); <span class="comment">/* Red */</span>           <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 7:     <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*14250000); <span class="comment">/* Orange */</span>        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 8:     <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*9000000); <span class="comment">/* Brown */</span>          <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 9:     <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*14272000); <span class="comment">/* Yellow */</span>        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 10:    <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*9300000); <span class="comment">/* Pistachio */</span>      <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 11:    <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*125000); <span class="comment">/* Green */</span>           <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 12:    <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*1830000); <span class="comment">/* Sea green */</span>      <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 13:    <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*1900000); <span class="comment">/* Sky blue */</span>       <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 14:    <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*300000); <span class="comment">/* Indigo */</span>          <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 15:    <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*255); <span class="comment">/* Blue */</span>               <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 16:    <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*16000000/<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a>-&gt;width()*x); <span class="comment">/* Multi-color columns */</span> <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 17:    <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*16000000/<a class="code" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">_imageCopy</a>-&gt;height()*y); <span class="comment">/* Multi-color rows */</span>   <span class="keywordflow">break</span>;
+                <span class="keywordflow">default</span>:    <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>-&gt;setPixel(x, y, colorOfPixel[x]*16775930); <span class="comment">/* White */</span>         <span class="keywordflow">break</span>;
+            }
+        }
+
+        emit <a class="code" href="class_stereogram_generator.html#a2cdce8fd926b60b875e651bc36ff740a">setStatusBarLabel</a>(QString(<span class="stringliteral">&quot;Generowanie: &quot;</span>)+QString(<span class="stringliteral">&quot;%1&quot;</span>).arg((y*100)/(_heightOfImage_Y-1))+QString(<span class="stringliteral">&quot;%&quot;</span>));
+    }
+
+    emit <a class="code" href="class_stereogram_generator.html#a2cdce8fd926b60b875e651bc36ff740a">setStatusBarLabel</a>(QString(<span class="stringliteral">&quot;Generowanie: 100% | Wygenerowano obrazek: &quot;</span>)+QString(<span class="stringliteral">&quot;%1&quot;</span>).arg(_widthOfImage_X)+QString(<span class="stringliteral">&quot;x&quot;</span>)+QString(<span class="stringliteral">&quot;%1&quot;</span>).arg(_heightOfImage_Y));
+
+    <span class="keywordflow">if</span>(circles)
+        <a class="code" href="class_stereogram_generator.html#ae8feabb9cb27e0d0351e6b75b4ff53f8">drawCirclesOnImage</a>(_widthOfImage_X,_heightOfImage_Y);
+
+    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">_widthOfImage_X</a>;++i)
+        <span class="keyword">delete</span> [] imageDepth[i];
+    <span class="keyword">delete</span> [] imageDepth;
+
+    <a class="code" href="class_stereogram_generator.html#afd2e0fef690381a4dca4cb1997544fe5">_wygenerowano</a> = <span class="keyword">true</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="af078db1de4b5c12310ea73bf8d5e36b8"></a><!-- doxytag: member="StereogramGenerator::getImage" ref="af078db1de4b5c12310ea73bf8d5e36b8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage* <a class="el" href="class_stereogram_generator.html#af078db1de4b5c12310ea73bf8d5e36b8">StereogramGenerator::getImage</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>getImage - zwraca wygenerowany plik ( stereogram ) </p>
+<dl class="see"><dt><b>Zobacz również:</b></dt><dd><a class="el" href="class_stereogram_generator.html#a04d433122a776d5d62d1b3a1db39b2d1">setImage()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#a9578a0d9cf76dc424af102912be47983">generate()</a>; </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>QImage - wygenerowany stereogram </dd></dl>
+<div class="fragment"><pre class="fragment">{<span class="keywordflow">return</span> <a class="code" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">_imageGeneratedStereogram</a>;}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ae5fa87e3361ae8e5d30d94be6c4c4bbe"></a><!-- doxytag: member="StereogramGenerator::roundSomething" ref="ae5fa87e3361ae8e5d30d94be6c4c4bbe" args="(double something)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_stereogram_generator.html#ae5fa87e3361ae8e5d30d94be6c4c4bbe">StereogramGenerator::roundSomething</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>something</em></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>roundSomething - funkcja zaokrąglająca daną liczbę ( np typu double ) do int'a </p>
+<dl class="params"><dt><b>Parametry:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">something</td><td>- zmienna do zaokrąglenia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Zobacz również:</b></dt><dd><a class="el" href="class_stereogram_generator.html#a9578a0d9cf76dc424af102912be47983">generate()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#ae8feabb9cb27e0d0351e6b75b4ff53f8">drawCirclesOnImage()</a>; </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>int - zwraca zaokrągloną liczbę </dd></dl>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordflow">return</span> ((<span class="keywordtype">int</span>)((something)+0.5));
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a9f6e8779395b6464c9772f5472d618b2"></a><!-- doxytag: member="StereogramGenerator::separateSomething" ref="a9f6e8779395b6464c9772f5472d618b2" args="(double something)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_stereogram_generator.html#a9f6e8779395b6464c9772f5472d618b2">StereogramGenerator::separateSomething</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>something</em></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>separateSomething - funkcja ( rozdzielająca ) pozycję, pobiera wartość pixela w skali szarości a następnie zwraca odległość w jakiej powinien znaleźć od "ściany" obrazka </p>
+<dl class="params"><dt><b>Parametry:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">something</td><td>- pozycja </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Zobacz również:</b></dt><dd><a class="el" href="class_stereogram_generator.html#a9578a0d9cf76dc424af102912be47983">generate()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#ae5fa87e3361ae8e5d30d94be6c4c4bbe">roundSomething()</a>; </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>int - zwraca rozdzieloną liczbę </dd></dl>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordflow">return</span> <a class="code" href="class_stereogram_generator.html#ae5fa87e3361ae8e5d30d94be6c4c4bbe">roundSomething</a>((1-<a class="code" href="class_stereogram_generator.html#ab0c288e7efcf038ae01dff34fbd6121a">_depthOfField</a>*something)*<a class="code" href="class_stereogram_generator.html#a5cb40b4855eb65429d603d44107059fc">_eyeSeparation</a>/(2-<a class="code" href="class_stereogram_generator.html#ab0c288e7efcf038ae01dff34fbd6121a">_depthOfField</a>*something));
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a867a8e53f2dfc53a3e7409d10f2b9389"></a><!-- doxytag: member="StereogramGenerator::setDefault" ref="a867a8e53f2dfc53a3e7409d10f2b9389" args="(int DPI, double distanceBetweenEyes)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_stereogram_generator.html#a867a8e53f2dfc53a3e7409d10f2b9389">StereogramGenerator::setDefault</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>DPI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distanceBetweenEyes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>setDefault - ustawia wartości domyślne klasy <a class="el" href="class_stereogram_generator.html">StereogramGenerator</a> </p>
+<dl class="see"><dt><b>Zobacz również:</b></dt><dd><a class="el" href="class_stereogram_generator.html#a9578a0d9cf76dc424af102912be47983">generate()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#a5181b264038c53241c3af7940da3d556">changeDefault()</a>; </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>void </dd></dl>
+<div class="fragment"><pre class="fragment">{
+    <a class="code" href="class_stereogram_generator.html#a76381656f3d02ba5071f8abad1a4354a">_DPI</a>                    = DPI;
+    <a class="code" href="class_stereogram_generator.html#a7a45b0cada49b07013fb05bb2defcc98">_distanceBetweenEyes</a>    = distanceBetweenEyes; <span class="comment">// odleglosc obiektow</span>
+    <a class="code" href="class_stereogram_generator.html#a5cb40b4855eb65429d603d44107059fc">_eyeSeparation</a>          = <a class="code" href="class_stereogram_generator.html#ae5fa87e3361ae8e5d30d94be6c4c4bbe">roundSomething</a>(<a class="code" href="class_stereogram_generator.html#a7a45b0cada49b07013fb05bb2defcc98">_distanceBetweenEyes</a>*<a class="code" href="class_stereogram_generator.html#a76381656f3d02ba5071f8abad1a4354a">_DPI</a>);
+    <a class="code" href="class_stereogram_generator.html#ab0c288e7efcf038ae01dff34fbd6121a">_depthOfField</a>           = (1.0/3.0);
+    <a class="code" href="class_stereogram_generator.html#a3a53dc06581ebc8f8e71fdf4a49e294a">_farOfDots</a>              = <a class="code" href="class_stereogram_generator.html#a9f6e8779395b6464c9772f5472d618b2">separateSomething</a>(0);
+    <a class="code" href="class_stereogram_generator.html#afd2e0fef690381a4dca4cb1997544fe5">_wygenerowano</a>           = <span class="keyword">false</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a04d433122a776d5d62d1b3a1db39b2d1"></a><!-- doxytag: member="StereogramGenerator::setImage" ref="a04d433122a776d5d62d1b3a1db39b2d1" args="(QImage *img)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_stereogram_generator.html#a04d433122a776d5d62d1b3a1db39b2d1">StereogramGenerator::setImage</a> </td>
+          <td>(</td>
+          <td class="paramtype">QImage *&#160;</td>
+          <td class="paramname"><em>img</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>setImage - ustawia plik, z którego będzie tworzony stereogram </p>
+<dl class="params"><dt><b>Parametry:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*img</td><td>- przekazany obrazek do wygenerowania ( *img = *imageCpy ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Zobacz również:</b></dt><dd><a class="el" href="class_stereogram_generator.html#af078db1de4b5c12310ea73bf8d5e36b8">getImage()</a>; </dd>
+<dd>
+<a class="el" href="class_stereogram_generator.html#a9578a0d9cf76dc424af102912be47983">generate()</a>; </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>void </dd></dl>
+<div class="fragment"><pre class="fragment">{<a class="code" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">_imageToGenerate</a> = img;}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a2cdce8fd926b60b875e651bc36ff740a"></a><!-- doxytag: member="StereogramGenerator::setStatusBarLabel" ref="a2cdce8fd926b60b875e651bc36ff740a" args="(QString tmp)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_stereogram_generator.html#a2cdce8fd926b60b875e651bc36ff740a">StereogramGenerator::setStatusBarLabel</a> </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>tmp</em></td><td>)</td>
+          <td><code> [signal]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>setStatusBarLabel - sygnał wysyłany do klasy <a class="el" href="class_main_window.html">MainWindow</a>, w która obsługuje zmienną ui - odpowiedzialną za GUI </p>
+<dl class="params"><dt><b>Parametry:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tmp</td><td>- string, ciąg znaków jaki ma się pojawić na status barze </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>void </dd></dl>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="ab0c288e7efcf038ae01dff34fbd6121a"></a><!-- doxytag: member="StereogramGenerator::_depthOfField" ref="ab0c288e7efcf038ae01dff34fbd6121a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_stereogram_generator.html#ab0c288e7efcf038ae01dff34fbd6121a">StereogramGenerator::_depthOfField</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _depthOfField - głębia widzialnego pola, ułamek ( 1/3 ) z widzialnego dystansu Zmienna prywatna. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7a45b0cada49b07013fb05bb2defcc98"></a><!-- doxytag: member="StereogramGenerator::_distanceBetweenEyes" ref="a7a45b0cada49b07013fb05bb2defcc98" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_stereogram_generator.html#a7a45b0cada49b07013fb05bb2defcc98">StereogramGenerator::_distanceBetweenEyes</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _distanceBetweenEyes - odległość między oczami ( w calach ) Zmienna prywatna. </p>
+
+</div>
+</div>
+<a class="anchor" id="a76381656f3d02ba5071f8abad1a4354a"></a><!-- doxytag: member="StereogramGenerator::_DPI" ref="a76381656f3d02ba5071f8abad1a4354a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="class_stereogram_generator.html#a76381656f3d02ba5071f8abad1a4354a">StereogramGenerator::_DPI</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _DPI - DPI ekranu, zmienna może być zmieniona przez użytkownika, domyślnie 96 Zmienna prywatna. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5cb40b4855eb65429d603d44107059fc"></a><!-- doxytag: member="StereogramGenerator::_eyeSeparation" ref="a5cb40b4855eb65429d603d44107059fc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_stereogram_generator.html#a5cb40b4855eb65429d603d44107059fc">StereogramGenerator::_eyeSeparation</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _eyeSeparation - zmienna odpowiadająca rozdzieleniu "oczu", pola widzialnego zależna od _distanceBetweenEyes oraz _DPI _eyeSeparation = roundSomething(_distanceBetweenEyes*_DPI) Zmienna prywatna. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3a53dc06581ebc8f8e71fdf4a49e294a"></a><!-- doxytag: member="StereogramGenerator::_farOfDots" ref="a3a53dc06581ebc8f8e71fdf4a49e294a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_stereogram_generator.html#a3a53dc06581ebc8f8e71fdf4a49e294a">StereogramGenerator::_farOfDots</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _farOfDots - wykorzystywana przy rysowaniu pomocniczych kropek - wyznacza ich odległość Zmienna prywatna. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0c39adb0cd67ce71ae980f8d5437055d"></a><!-- doxytag: member="StereogramGenerator::_heightOfImage_Y" ref="a0c39adb0cd67ce71ae980f8d5437055d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_stereogram_generator.html#a0c39adb0cd67ce71ae980f8d5437055d">StereogramGenerator::_heightOfImage_Y</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _widthOfImage_X - przechowuje wykosość ( w pixelach ) przeskalowanego obrazka ( generowanego stereogramu ) Zmienna prywatna. </p>
+
+</div>
+</div>
+<a class="anchor" id="a86c8a363f19930235414384e753c0803"></a><!-- doxytag: member="StereogramGenerator::_imageCopy" ref="a86c8a363f19930235414384e753c0803" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage* <a class="el" href="class_stereogram_generator.html#a86c8a363f19930235414384e753c0803">StereogramGenerator::_imageCopy</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _imageCopy - przechowuje kopię oryginanego obrazka ( na potrzeby zmieny rozmiaru itd. ) Zmienna prywatna. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6fe4fc5315c3cd4429897ca9dae928a2"></a><!-- doxytag: member="StereogramGenerator::_imageGeneratedStereogram" ref="a6fe4fc5315c3cd4429897ca9dae928a2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage* <a class="el" href="class_stereogram_generator.html#a6fe4fc5315c3cd4429897ca9dae928a2">StereogramGenerator::_imageGeneratedStereogram</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _imageGeneratedStereogram - przechowuje wygerowany stereogram Zmienna prywatna. </p>
+
+</div>
+</div>
+<a class="anchor" id="a04c4ac7f0931e6544a568b77b6626b66"></a><!-- doxytag: member="StereogramGenerator::_imageToGenerate" ref="a04c4ac7f0931e6544a568b77b6626b66" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage* <a class="el" href="class_stereogram_generator.html#a04c4ac7f0931e6544a568b77b6626b66">StereogramGenerator::_imageToGenerate</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _imageToGenerate - przechowuje obrazek, z którego będzie generowany stereogram Zmienna prywatna. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab482f965f47fec736345b020c94a3274"></a><!-- doxytag: member="StereogramGenerator::_widthOfImage_X" ref="ab482f965f47fec736345b020c94a3274" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_stereogram_generator.html#ab482f965f47fec736345b020c94a3274">StereogramGenerator::_widthOfImage_X</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _widthOfImage_X - przechowuje szerokość ( w pixelach ) przeskalowanego obrazka ( generowanego stereogramu ) Zmienna prywatna. </p>
+
+</div>
+</div>
+<a class="anchor" id="afd2e0fef690381a4dca4cb1997544fe5"></a><!-- doxytag: member="StereogramGenerator::_wygenerowano" ref="afd2e0fef690381a4dca4cb1997544fe5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_stereogram_generator.html#afd2e0fef690381a4dca4cb1997544fe5">StereogramGenerator::_wygenerowano</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Zmienna _wygenerowano - true jeśli wczytano obrazek - pomaga w zarządzaniu pamięcią Zmienna prywatna. </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>src/<a class="el" href="stereogramgenerator_8h_source.html">stereogramgenerator.h</a></li>
+<li>src/<a class="el" href="stereogramgenerator_8cpp.html">stereogramgenerator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Mon Feb 6 2012 11:26:27 dla Stereogramiksy programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Ile gwiazdek
+2
+gry/obrazki/gwiazdki.jpg
+gry/obrazki/gwiazdki2.bmp
+3
+6

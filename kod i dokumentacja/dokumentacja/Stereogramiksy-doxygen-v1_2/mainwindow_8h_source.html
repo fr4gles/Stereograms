@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Stereogramiksy: Plik źródłowy src/mainwindow.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="stereo.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Stereogramiksy
+   &#160;<span id="projectnumber">1.2</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="dir_93d3dd73afb917b603abeb6f8c38ab32.html">src</a>      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">mainwindow.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mainwindow_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef MAINWINDOW_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define MAINWINDOW_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QMainWindow&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;QFileDialog&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;QStringListModel&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;QImageReader&gt;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="stereogramgenerator_8h.html">stereogramgenerator.h</a>&quot;</span>
+<a name="l00010"></a>00010 
+<a name="l00016"></a><a class="code" href="namespace_ui.html">00016</a> <span class="keyword">namespace </span>Ui
+<a name="l00017"></a>00017 {
+<a name="l00018"></a>00018     <span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a>;
+<a name="l00019"></a>00019 }
+<a name="l00020"></a>00020 
+<a name="l00027"></a><a class="code" href="class_main_window.html">00027</a> <span class="keyword">class </span><a class="code" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029     Q_OBJECT
+<a name="l00030"></a>00030     
+<a name="l00031"></a>00031 <span class="keyword">public</span>:
+<a name="l00032"></a>00032 
+<a name="l00037"></a>00037     <span class="keyword">explicit</span> <a class="code" href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">MainWindow</a>(QWidget *parent = 0);
+<a name="l00038"></a>00038 
+<a name="l00042"></a>00042     <a class="code" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>();
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044 <span class="keyword">private</span> slots:
+<a name="l00045"></a>00045 
+<a name="l00049"></a>00049     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a67fdf290ae1c5b91f59179d0a23f5ea0" title="funkcja odpowiadająca za wświetlenie na labelu informaji o wczytanym obrazku">setLabel_info</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">float</span> size, <span class="keywordtype">bool</span> allgray);
+<a name="l00050"></a>00050 
+<a name="l00054"></a>00054     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a0fd1531e1e6e8c9b873a898e82732d5d" title="funkcja odpowiadająca za wświetlenie na status barze aktulanych informacji/podpowiedzi">onStatusBarChanged</a>(QString tmp);
+<a name="l00055"></a>00055 
+<a name="l00059"></a>00059     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a57ed3f8567b0ee8c1d74f54a3377c41e" title="funkcja obłusująca przycisk przenoszący użytkownika do odpowiedniej generowania stereogramu">on_pushButton_Generate_clicked</a>();
+<a name="l00060"></a>00060 
+<a name="l00064"></a>00064     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a716f3b40c6e743d44cfcf9252b2a1934" title="funkcja obłusująca przycisk otwierający OpenFileDialog">on_pushButton_Open_clicked</a>();
+<a name="l00065"></a>00065 
+<a name="l00069"></a>00069     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4792101163ca27fe3443eeca03e94ecf" title="funkcja obłusująca przycisk zamykający program">on_pushButton_Koniec_clicked</a>();
+<a name="l00070"></a>00070 
+<a name="l00074"></a>00074     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4de79c63c7fa0b8d7c468ac71f20be81" title="funkcja obłusująca przycisk powracający do głownego menu z zakładki generowanie stereogramu">on_pushButton_clicked</a>();
+<a name="l00075"></a>00075 
+<a name="l00079"></a>00079     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#af2ddb60622d540e571cd7c4079b8be15" title="Wybor zakladki &#39;Gra&#39; z menu glownego programu.">on_pushButton_Games_clicked</a>();
+<a name="l00080"></a>00080 
+<a name="l00084"></a>00084     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a0d0d2e7ba4e3f9bbc709d8dc11b8be78" title="funkcja obłusująca przycisk otwierający SaveFileDialog - zapisuje obrazek">on_pushButton_Save_clicked</a>();
+<a name="l00085"></a>00085 
+<a name="l00089"></a>00089     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aee20e06862baac9e33231964e12b3f95" title="W zakladce wyboru gier wybieramy gre w ktora chcemy zagrac.">on_pushButton_wg_Graj_clicked</a>();
+<a name="l00090"></a>00090 
+<a name="l00093"></a>00093     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4ab2a27d986d6bb7b9fe81d6e556ec70" title="Powrot do menu glownego z zakladki wybory gier.">on_pushButton_wg_Menu_clicked</a>();
+<a name="l00094"></a>00094 
+<a name="l00098"></a>00098     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a189d01ee37318d9e7340a62e520e695c" title="Akcja na klikniecie odpowiedzi do gry.">on_pushButton_game_Ok_clicked</a>();
+<a name="l00099"></a>00099 
+<a name="l00103"></a>00103     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a01d6bb31ddce71b6dba151904f28bf3b" title="funkcja obłusująca przycisk powracający do głownego menu z zakładki z wynikami gry">on_pushButton_2_end_menu_clicked</a>();
+<a name="l00104"></a>00104 
+<a name="l00108"></a>00108     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a2bd2900604e5f3f093f95ffde8a86bd2" title="funkcja obłusująca check odpowiedzialny za wygenerowanie stereogramu z pomocniczymi kropkami...">on_checkBox_clicked</a>();
+<a name="l00109"></a>00109 
+<a name="l00113"></a>00113     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a997373353a3ed5df4ae96c77d01955cb" title="Wybor zakladki &#39;Stworz scenariusz&#39; w menu glownym.">on_pushButton_Scenariusz_clicked</a>();
+<a name="l00114"></a>00114 
+<a name="l00118"></a>00118     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a804041229784374a90906bdce9451aee" title="Powrot do menu z zakladki scenariusz.">on_pushButton_scen_menu_clicked</a>();
+<a name="l00119"></a>00119 
+<a name="l00123"></a>00123     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a76267e2c69df74ccbd813070db3923b5" title="Przycisk akcji dodajacy obrazek do scenariusza.">on_pushButton_scen_add_clicked</a>();
+<a name="l00124"></a>00124 
+<a name="l00128"></a>00128     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4470c2bb518897969cd13f9053040812" title="Dodanie wszystkich obrazkow i przejscie do kolejnego etapu.">on_pushButton_scen_dalej_clicked</a>();
+<a name="l00129"></a>00129 
+<a name="l00133"></a>00133     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a04967c2c11ec84363c80deb2e1b0051a" title="Powrot do menu z zakladki stworzenia scenariusza.">on_pushButton_scen2_menu_clicked</a>();
+<a name="l00134"></a>00134 
+<a name="l00138"></a>00138     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#abb840b82ca4bd6d5dcec409f1277580b" title="Dodanie hasla do gry przy tworzeniu scenariusza.">on_pushButton_scen2_add_clicked</a>();
+<a name="l00139"></a>00139 
+<a name="l00143"></a>00143     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#acdd173e3e1c6812f11cb709422d6c537" title="Zakonczenie tworzenia scenariusza i zapis do pliku.">on_pushButton_scen2_ok_clicked</a>();
+<a name="l00144"></a>00144 
+<a name="l00148"></a>00148     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a20dbb80de6c861f26ae88c4588ca6cf2" title="funkcja obłusująca combobox odpowiedzialny za zmianę kolorów na stereogramie">on_comboBox_activated</a>(<span class="keywordtype">int</span> index);
+<a name="l00149"></a>00149 
+<a name="l00153"></a>00153     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a045f624cfd26556594a734b2d6be5af0" title="Wybor zakladki &#39;o programie&#39; z menu glownego.">on_pushButton_Oprogramie_clicked</a>();
+<a name="l00154"></a>00154 
+<a name="l00158"></a>00158     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a1e5c0448226291ea32f1be7d111e70e9" title="Powrot do menu z zakladki o programie.">on_pushButton_oprogramie_menu_clicked</a>();
+<a name="l00159"></a>00159 
+<a name="l00163"></a>00163     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a744eed5d64a8725f643bbb46029d9de0" title="funkcja obłusująca combobox odpowiedzialny za zmianę DPI generowanego stereogramu">on_comboBox_DPI_activated</a>(<span class="keywordtype">int</span> index);
+<a name="l00164"></a>00164 
+<a name="l00168"></a>00168     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#aaa7be3aa0092e073a5f45e7735f0c060" title="funkcja obłusująca combobox odpowiedzialny za rozstawu oczu generowanego stereogramu">on_comboBox_RozstawOczu_activated</a>(<span class="keywordtype">int</span> index);
+<a name="l00169"></a>00169 
+<a name="l00173"></a>00173     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad9b763ac53d0da68b6df0b8a9767897c" title="funkcja obłusująca checkbox odpowiedzialny za zmianę &quot;wklęsłości&quot; stereogramu - więcej w dokumentacji...">on_checkBox_wkleslosc_clicked</a>();
+<a name="l00174"></a>00174 
+<a name="l00178"></a>00178     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a66f147ca06d2405b37c81d908311952c" title="funkcja obłusująca checkbox odpowiedzialny za to czy obrazek ma się dopasowywać do okna czy też pozos...">on_checkBox_dopasujDoOkna_clicked</a>();
+<a name="l00179"></a>00179 
+<a name="l00180"></a>00180 <span class="keyword">private</span>:
+<a name="l00190"></a>00190     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a6243019de680dc2dc64a9549dddab300">update</a>(<span class="keywordtype">bool</span> dopasuj=<span class="keyword">true</span>);
+<a name="l00191"></a>00191 
+<a name="l00200"></a>00200     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a288b768c3c21a9171bdc56fe845ece8b">openFile</a>();
+<a name="l00201"></a>00201 
+<a name="l00210"></a>00210     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a464aaa4d378e7b2d814756a73d6e1ed6">saveFile</a>();
+<a name="l00211"></a>00211 
+<a name="l00221"></a>00221     <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#a5772e1721a0a131757936b6526d9a591">wczytajPlik</a>(QString <a class="code" href="class_main_window.html#a4f1799d0a2b464abfdef685cf9f23dc9">fileName</a>);
+<a name="l00222"></a>00222 
+<a name="l00232"></a>00232     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a8851a931482834eeec527490eedaf20e">resizeEvent</a>(QResizeEvent *);
+<a name="l00233"></a>00233 
+<a name="l00234"></a>00234 
+<a name="l00244"></a>00244     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a6f6951574f756d0286e2b49fac9e6151">setElementsDisabled</a>(<span class="keywordtype">bool</span> disabled);
+<a name="l00245"></a>00245 
+<a name="l00250"></a><a class="code" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">00250</a>     Ui::MainWindow *<a class="code" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">ui</a>;
+<a name="l00251"></a>00251 
+<a name="l00256"></a><a class="code" href="class_main_window.html#a4f1799d0a2b464abfdef685cf9f23dc9">00256</a>     QString *<a class="code" href="class_main_window.html#a4f1799d0a2b464abfdef685cf9f23dc9">fileName</a>;
+<a name="l00257"></a>00257 
+<a name="l00262"></a><a class="code" href="class_main_window.html#a549b21abaf02c316e9cb872b26153f54">00262</a>     QImage *<a class="code" href="class_main_window.html#a549b21abaf02c316e9cb872b26153f54">imageOrg</a>;
+<a name="l00263"></a>00263 
+<a name="l00268"></a><a class="code" href="class_main_window.html#a6f8212bd1d9df6df8d27e1f8a5ad5211">00268</a>     QImage *<a class="code" href="class_main_window.html#a6f8212bd1d9df6df8d27e1f8a5ad5211">imageCpy</a>;
+<a name="l00269"></a>00269 
+<a name="l00274"></a><a class="code" href="class_main_window.html#af752160d35e2a4259d18f724c8440b0e">00274</a>     QImage *<a class="code" href="class_main_window.html#af752160d35e2a4259d18f724c8440b0e">imageToSave</a>;
+<a name="l00275"></a>00275 
+<a name="l00280"></a><a class="code" href="class_main_window.html#ae898912964789e1b8d90e24ca4bff949">00280</a>     QImage <a class="code" href="class_main_window.html#ae898912964789e1b8d90e24ca4bff949">scaledImage</a>;
+<a name="l00281"></a>00281 
+<a name="l00286"></a><a class="code" href="class_main_window.html#ac1d7438cb70638e993c803aa2ef80deb">00286</a>     <span class="keywordtype">bool</span> <a class="code" href="class_main_window.html#ac1d7438cb70638e993c803aa2ef80deb">wczytano</a>;
+<a name="l00287"></a>00287 
+<a name="l00288"></a>00288 
+<a name="l00293"></a><a class="code" href="class_main_window.html#afd7607e05d83b28c9303827fc6c97232">00293</a>     <a class="code" href="class_stereogram_generator.html">StereogramGenerator</a> <a class="code" href="class_main_window.html#afd7607e05d83b28c9303827fc6c97232">_stereogramGenerator</a>;
+<a name="l00294"></a>00294 
+<a name="l00295"></a>00295 
+<a name="l00296"></a>00296 
+<a name="l00297"></a>00297     <span class="comment">/* do gry */</span>
+<a name="l00302"></a><a class="code" href="class_main_window.html#a2f5458d344e6e7eec5d188f458fd6706">00302</a>     QString <a class="code" href="class_main_window.html#a2f5458d344e6e7eec5d188f458fd6706">tytulGra</a>;
+<a name="l00307"></a><a class="code" href="class_main_window.html#a8ddfc0b1912fe3e16152f7f5be001bca">00307</a>     <span class="keywordtype">int</span> <a class="code" href="class_main_window.html#a8ddfc0b1912fe3e16152f7f5be001bca">ileObrazkowGra</a>;
+<a name="l00312"></a><a class="code" href="class_main_window.html#ae5d7b9c9b2dbc676aaa5b3924a395236">00312</a>     QStringList <a class="code" href="class_main_window.html#ae5d7b9c9b2dbc676aaa5b3924a395236">adresObrazkaGra</a>;
+<a name="l00317"></a><a class="code" href="class_main_window.html#adc87f749d8f58aa6e212d0c3eba3f4ea">00317</a>     QStringList <a class="code" href="class_main_window.html#adc87f749d8f58aa6e212d0c3eba3f4ea">hasloObrazkaGra</a>;
+<a name="l00322"></a><a class="code" href="class_main_window.html#a98e4736dc93746db98f121166bc87fe7">00322</a>     <span class="keywordtype">int</span>  <a class="code" href="class_main_window.html#a98e4736dc93746db98f121166bc87fe7">punktyGra</a>;
+<a name="l00327"></a><a class="code" href="class_main_window.html#a6238d379ae4ed2428e690f1541797000">00327</a>     <span class="keywordtype">int</span> <a class="code" href="class_main_window.html#a6238d379ae4ed2428e690f1541797000">ktoryObrazekGra</a>;
+<a name="l00328"></a>00328     <span class="comment">/* koniec do gry */</span>
+<a name="l00329"></a>00329     <span class="comment">/* generator scenariuszy */</span>
+<a name="l00334"></a><a class="code" href="class_main_window.html#ae49a8ca4474bf1c7f55dfdfd8e53b871">00334</a>     QStringList <a class="code" href="class_main_window.html#ae49a8ca4474bf1c7f55dfdfd8e53b871">fileListScen</a>;
+<a name="l00339"></a><a class="code" href="class_main_window.html#accac891870d1343d4fce02b58eaedc5f">00339</a>     QStringList <a class="code" href="class_main_window.html#accac891870d1343d4fce02b58eaedc5f">haslaListScen</a>;
+<a name="l00340"></a>00340     <span class="comment">/*koniec generator scenariuszy */</span>
+<a name="l00341"></a>00341 
+<a name="l00342"></a>00342 
+<a name="l00343"></a>00343     <span class="comment">/* funkcje do gry */</span>
+<a name="l00352"></a>00352     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a6d8609cd154dfa55217680b516200222" title="Wczytanie parametrow gry.">loadGame</a>(QString);
+<a name="l00358"></a>00358     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#adf66fab2319a8c885e5af007c90f6540" title="Uaktulnienie statystyk oraz punktow gry.">statsGame</a>(<span class="keywordtype">int</span>);
+<a name="l00363"></a>00363     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a567c311fa442a1e5a13aee7efb2ea7b5" title="Wyswietlenie obrazka w grze.">showGame</a>();
+<a name="l00367"></a>00367     <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a37d293e7856b1ce69164db1422057700" title="Wyswietla zakladke podsumowania gry.">endGame</a>();
+<a name="l00368"></a>00368 
+<a name="l00369"></a>00369 };
+<a name="l00370"></a>00370 
+<a name="l00371"></a>00371 <span class="preprocessor">#endif // MAINWINDOW_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Mon Feb 6 2012 11:26:27 dla Stereogramiksy programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>
